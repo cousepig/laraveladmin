@@ -4,7 +4,7 @@ requires PHP 7+ and Laravel 5.5
 ###首先安装 laravel 5.5, 配置数据库连接.
 <code>composer create-project --prefer-dist laravel/laravel blog</code>
 ###发布assets和config：
-<code>php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
+<code>php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"</code>
 ###完成安装.
 <code>php artisan admin:install</code>
 ###登录方式

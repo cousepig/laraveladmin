@@ -40,3 +40,39 @@ http://laravel-admin.org/docs/#/zh/installation
 <code>composer require laravel-admin-ext/media-manager -vvv</code><br />
 <code>composer require laravel-admin-ext/scheduling -vvv</code><br />
 <code>composer require spatie/eloquent-sortable -vvv</code><br />
+
+$ composer require laravel-admin-ext/config
+
+$ php artisan migrate
+
+$ composer require laravel-admin-ext/media-manager -vvv
+
+$ php artisan admin:import media-manager
+
+$ composer require laravel-admin-ext/log-viewer -vvv
+
+$ php artisan admin:import log-viewer
+
+$ composer require laravel-admin-ext/api-tester -vvv
+
+$ php artisan vendor:publish --tag=api-tester
+php artisan admin:import api-tester
+
+$ composer require laravel-admin-ext/reporter -vvv
+
+$ php artisan vendor:publish --tag=laravel-admin-reporter
+
+$ php artisan migrate --path=vendor/laravel-admin-ext/reporter/database/migrations
+
+$ php artisan admin:import reporter
+
+
+$ composer require laravel-admin-ext/scheduling -vvv
+
+$ php artisan admin:import scheduling
+
+$ composer require "laravel-admin-ext/messages @dev"
+
+$ php artisan migrate
+
+$ php artisan admin:import Encore\\Admin\\Message\\Messages
